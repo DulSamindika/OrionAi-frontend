@@ -1,0 +1,135 @@
+.head-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /*background: url('/public/Images/hero.png') no-repeat center center/cover; Ensure correct path */
+  }
+  
+ /* .head-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+  }
+  
+  .head-title {
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  .head-text {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .head-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #3498db;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .head-button:hover {
+    background-color: #2980b9;
+  }
+
+
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navBar {
+  position: absolute; 
+  width: 100%;
+  background: transparent; 
+  z-index: 10;
+
+nav {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 0; 
+}
+
+nav ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px; 
+}
+
+nav ul li a {
+  color: white; 
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #3498db;
+}
+
+.head-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  background: url('../images/hero.png') no-repeat center center/cover; 
+}*/
+
+.head-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  /*background-color: rgba(0, 0, 0, 0.5);  Optional: Add overlay for better text visibility */
+  
+}
+
+
+
+
+.head-title {
+  font-size: 48px;
+  margin: 0;
+}
+
+.head-text {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.head-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background-color: #3498db;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.head-button:hover {
+  background-color: #2980b9;
+}
