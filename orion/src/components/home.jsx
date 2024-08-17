@@ -10,7 +10,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
-const  home = () => {
+const  Home = () => {
 
  
   return (
@@ -114,4 +114,4 @@ const  home = () => {
   )
 }
 
-export default home
+export default Home
