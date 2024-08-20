@@ -1,3 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+   /* Prevents scrollbars from appearing */
+}
+
 .writers {
     height: 100vh;
     display: flex;
@@ -7,16 +15,19 @@
   }
   
   .background-image {
-    width: 100%;
-    height: 100%;
-    background-image: url('/images/writer.png'); /* Replace with your image path */
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh;
+    background-image: url('../../images/writers.png'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
-    position: relative;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .glass-overlay {
-    background: rgba(0, 0, 128, 0.5); /* Transparent blue */
+    background: rgba(13, 13, 110, 0.5); /* Transparent blue */
     border-radius: 10px;
     padding: 30px;
     text-align: center;
@@ -24,7 +35,9 @@
     backdrop-filter: blur(10px); /* Blur effect */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    margin: auto;
+    margin: 50px;
+    margin-top: 200px;
+    margin-left: 120px;
   }
   
   .glass-overlay h1 {

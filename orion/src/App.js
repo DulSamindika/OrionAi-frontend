@@ -1,8 +1,9 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
-import Home from './components/Home';
+import Home from './components/home';
 import WritersHome from './components/writers/WritersHome';
+import WriterLvl1 from './components/writers/WriterLvl1'
 import './App.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/wri" element={<WritersHome />} />
+        <Route path="/wri2" element={< WriterLvl1 />} />
       </Routes>
       </Router>
     </>
