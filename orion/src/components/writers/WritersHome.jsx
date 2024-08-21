@@ -18,8 +18,8 @@ export default function WritersHome() {
             feats, becoming a master promptsmith.
           </p>
           <div className="button-container">
-            <button className="level-button"><a href="wri2" className="blog-slider__button">Level 1</a></button>
-            <button className="level-button">Level 2</button>
+          <a href="/wri2" className="blog-slider__button"><button className="level-button">Level 1</button></a>
+            <button className="level-button" to='/wri2'>Level 2</button>
             <button className="level-button">Level 3</button>
           </div>
         </div>
