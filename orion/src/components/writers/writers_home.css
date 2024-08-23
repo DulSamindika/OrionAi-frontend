@@ -6,25 +6,7 @@ body {
    /* Prevents scrollbars from appearing */
 }
 
-/*.writers {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #000;
-  }*/
-  
-  /*.background-image {
-    width: 100vw; 
-    height: 100vh;
-    background-image: url('../../images/writers.png'); 
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }*/
+
 
   .background-image {
     width: 100%;
