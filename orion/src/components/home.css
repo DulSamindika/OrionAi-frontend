@@ -263,3 +263,34 @@ nav ul li a:hover {
     width: 100%;
   }
 }
+
+
+.custom-carousel {
+  width: 800px;
+  margin: auto;
+  background-color: #000;
+}
+
+.carousel-content {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  margin: 50px;
+  border-radius: 20px;
+}
+
+.carousel-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.carousel-image {
+  flex: 1;
+  text-align: right;
+}
+
+.carousel-image img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
