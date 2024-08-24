@@ -5,6 +5,8 @@ import Home from './components/home';
 import WritersHome from './components/writers/WritersHome';
 import WriterLvl1 from './components/writers/WriterLvl1'
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (

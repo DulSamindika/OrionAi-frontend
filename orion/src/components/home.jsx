@@ -1,20 +1,21 @@
 import React from 'react'
 import './home.css';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/effect-fade';
-import  { Mousewheel, Pagination, EffectFade } from 'swiper/modules';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
+//import Container from 'react-bootstrap/Container';
+//import Row from 'react-bootstrap/Row';
+//import Col from 'react-bootstrap/Col';
+import Carousel from 'react-bootstrap/Carousel';
+//import ExampleCarouselImage from 'components/ExampleCarouselImage';
+import {  Button } from 'react-bootstrap';
+import './home.css';
+//import Image from 'react-bootstrap/Image'
+import {Link} from 'react-router-dom';
 
 const  Home = () => {
 
  
   return (
-    <div>
+    <div style={{backgroundColor:"#000000"}}>
         <div class="head-section">
         <div className="dark-overlay">
         <img src="./Images/hero.png" alt="Hero" class="head-image"/>
@@ -27,8 +28,87 @@ const  Home = () => {
        </div>
 
 
+
+
+
+
+       <Carousel className="custom-carousel" >
+      <Carousel.Item>
+        <div className="carousel-content" style={{"background-color":"#0C0B45"}}>
+          <div className="carousel-text" style={{"color":"white"}}>
+            <h3>A kingdom of</h3>
+            <h1><b><i>Writers</i></b></h1>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <Link to='/wri'>
+            <Button variant="light">Play Now</Button>
+            </Link>
+          </div>
+          <div className="carousel-image">
+            <img
+              src="./Images/wri.png"
+              alt="First slide"
+              className="img-fluid"
+            />
+          </div>
+        </div>
+      </Carousel.Item>
+      <Carousel.Item>
+        <div className="carousel-content" style={{"background-color":"#3A2104"}}>
+          <div className="carousel-text" style={{"color":"white"}}>
+            <h3>A kingdom of</h3>
+            <h1><b><i>Artists</i></b></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <Button variant="light">Play Now</Button>
+          </div>
+          <div className="carousel-image">
+            <img
+              src="./Images/artist.png"
+              alt="Second slide"
+              className="img-fluid"
+            />
+          </div>
+        </div>
+      </Carousel.Item>
+      <Carousel.Item>
+        <div className="carousel-content" style={{"background-color":"#38054A"}}>
+          <div className="carousel-text" style={{"color":"white"}}>
+            <h3>A kindom of</h3>
+            <h1><b><i>Musicians</i></b></h1>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <Button variant="light">Play Now</Button>
+          </div>
+          <div className="carousel-image">
+            <img
+              src="./Images/music.png"
+              alt="Third slide"
+              className="img-fluid"
+            />
+          </div>
+        </div>
+      </Carousel.Item>
+      <Carousel.Item>
+        <div className="carousel-content" style={{"background-color":"#0D2108"}}>
+          <div className="carousel-text" style={{"color":"white"}}>
+            <h3>A Kingdom of</h3>
+            <h1><b><i>Programmers</i></b></h1>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <Button variant="light">Play Now</Button>
+          </div>
+          <div className="carousel-image">
+            <img
+              src="./Images/program.png"
+              alt="Third slide"
+              className="img-fluid" 
+            />
+          </div>
+        </div>
+      </Carousel.Item>
+    </Carousel>
+
+
+
       
-      <div class="blog-slider">
+{/*<div class="blog-slider">
        <Swiper
         modules={[Mousewheel, Pagination, EffectFade]}
         spaceBetween={30}
@@ -109,7 +189,7 @@ const  Home = () => {
 
 
   </Swiper>
-</div>
+</div>*/}
     </div>
   )
 }
