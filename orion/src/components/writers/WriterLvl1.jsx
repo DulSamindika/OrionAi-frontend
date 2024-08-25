@@ -1,5 +1,6 @@
 import React from 'react';
 import './WriterLvl1.css';
+import {Link} from 'react-router-dom';
 
 const WriterLvl1 = () => {
     return (
@@ -12,7 +13,9 @@ const WriterLvl1 = () => {
                     Argoals of Gozo, mastering the fine art of commanding words.
                 </p>
                 <div className="task-list">
+                    <Link to='/wriTask' className="task-btn">
                     <button className="task-btn">Task 1<br /><span>Simple Email Writing and reply.</span></button>
+                    </Link>
                     <button className="task-btn">Task 2<br /><span>Speech Writing.</span></button>
                     <button className="task-btn">Task 3<br /><span>Social Media Post</span></button>
                     <button className="task-btn">Task 4<br /><span>Blog Post Summary</span></button>
