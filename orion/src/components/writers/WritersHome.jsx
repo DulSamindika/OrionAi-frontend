@@ -1,5 +1,6 @@
 import React from 'react'
 import './writers_home.css';
+import {Link} from 'react-router-dom';
 
 export default function WritersHome() {
   return (
@@ -18,7 +19,10 @@ export default function WritersHome() {
             feats, becoming a master promptsmith.
           </p>
           <div className="button-container">
-          <a href="/wri2" className="blog-slider__button"><button className="level-button">Level 1</button></a>
+          
+            <Link to='/wri2' className="level-button">
+            <button className="level-button">Level 1</button>
+            </Link>
             <button className="level-button" to='/wri2'>Level 2</button>
             <button className="level-button">Level 3</button>
           </div>
