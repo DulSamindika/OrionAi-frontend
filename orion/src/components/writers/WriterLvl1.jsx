@@ -16,10 +16,18 @@ const WriterLvl1 = () => {
                     <Link to='/wriTask' className="task-btn">
                     <button className="task-btn">Task 1<br /><span>Simple Email Writing and reply.</span></button>
                     </Link>
+                    <Link to='/wriTask2' className="task-btn">
                     <button className="task-btn">Task 2<br /><span>Speech Writing.</span></button>
+                    </Link>
+                    <Link to='/wriTask3' className="task-btn">
                     <button className="task-btn">Task 3<br /><span>Social Media Post</span></button>
+                    </Link>
+                    <Link to='/wriTask4' className="task-btn">
                     <button className="task-btn">Task 4<br /><span>Blog Post Summary</span></button>
+                    </Link>
+                    <Link to='/wriTask5' className="task-btn">
                     <button className="task-btn">Task 5<br /><span>Text Summary</span></button>
+                    </Link>
                     <button className="challenge-btn">Challenge 1</button>
                 </div>
             </div>
