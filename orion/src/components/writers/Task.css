@@ -51,16 +51,7 @@ html,body {
     border-color: #616161;
 }
 
-.btn-dark {
-    background-color: #212121;
-    border-color: #212121;
-    color: #ffffff;
-}
 
-.btn-dark:hover {
-    background-color: #424242;
-    border-color: #424242;
-}
 
 /* Dark theme for the text area */
 form textarea {
@@ -98,6 +89,48 @@ h2, h4, h5 {
     margin: 5px;
 }
 
+.mb-3{
+    margin: 5px;
+}
+
 .Formarea{
     background-color: #121212;
 }
+
+/*.btn-dark {
+    background-color: #212121;
+    border-color: #212121;
+    color: #ffffff;
+}
+
+.btn-dark:hover {
+    background-color: #424242;
+    border-color: #424242;
+}*/
+
+/* Selected button outline */
+
+
+.btn-dark {
+    background-color: #212121;
+    border: 2px solid #212121;
+    color: #ffffff;
+}
+
+.btn-dark:hover {
+    background-color: #424242;
+    border-color: #2979ff;
+}
+
+/* Selected button border */
+.btn-selected {
+    border: 2px solid #2979ff !important; /* Ensure the selected border stays blue */
+    background-color: #424242; /* Optional: change background when selected */
+}
+
+/* Reset the focus style to remove default focus border */
+.btn-dark:focus {
+    outline: none;
+    box-shadow: none;
+}
+
