@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Button, Card, Form } from 'react-bootstrap';
 import './Task.css';
 
-const TaskOne = () => {
+const Task1 = () => {
   const [prompt, setPrompt] = useState('');
   const [output, setOutput] = useState('');
   const [improvedPrompt, setImprovedPrompt] = useState('');
@@ -83,4 +83,4 @@ const TaskOne = () => {
   );
 };
 
-export default TaskOne;
+export default Task1;
