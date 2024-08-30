@@ -121,7 +121,7 @@ const Task5 = () => {
       </Row>
       <Row style={{margin:"50px"}}>
         <Col md={2}>
-        <Button variant="outline-light" style={{margin:"20px", justifyContent:"flex-start"}}>Back</Button>
+        <Button variant="outline-light" style={{margin:"20px", justifyContent:"flex-start"}}onClick={() => window.location.href='/Task4'}>Back</Button>
         </Col>
         <Col md={8}>
         <h5>Level 1</h5>

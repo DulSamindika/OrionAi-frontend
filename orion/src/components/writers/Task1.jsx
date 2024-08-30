@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Button, Card, Form } from 'react-bootstrap';
+import ProgressBar from 'react-bootstrap/ProgressBar';
 import './Task.css';
 
 const Task1 = () => {
@@ -76,6 +77,15 @@ const Task1 = () => {
           <Card>
             <Card.Body>{improvedPrompt}</Card.Body>
           </Card>
+        </Col>
+      </Row>
+      <Row style={{margin:"50px"}}>
+        <Col md={8}>
+        <h5>Level 1</h5>
+        <ProgressBar animated now={0} />
+        </Col>
+        <Col md={2}>
+        <Button variant="light" style={{margin:"20px", alignContent:"flex-end", justifyContent:"left"}}onClick={() => window.location.href='/Task2'}>Next Task</Button>
         </Col>
       </Row>
     </Container>

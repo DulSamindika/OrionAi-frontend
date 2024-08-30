@@ -117,14 +117,14 @@ const Task4 = () => {
       </Row>
       <Row style={{margin:"50px"}}>
         <Col md={2}>
-        <Button variant="outline-light" style={{margin:"20px", justifyContent:"flex-start"}}>Back</Button>
+        <Button variant="outline-light" style={{margin:"20px", justifyContent:"flex-start"}}onClick={() => window.location.href='/Task3'}>Back</Button>
         </Col>
         <Col md={8}>
         <h5>Level 1</h5>
         <ProgressBar animated now={80} />
         </Col>
         <Col md={2}>
-        <Button variant="light" style={{margin:"20px", alignContent:"flex-end", justifyContent:"left"}}>Next Task</Button>
+        <Button variant="light" style={{margin:"20px", alignContent:"flex-end", justifyContent:"left"}}onClick={() => window.location.href='/Task5'}>Next Task</Button>
         </Col>
       </Row>
     </Container>
