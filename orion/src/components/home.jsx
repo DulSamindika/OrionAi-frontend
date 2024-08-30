@@ -23,7 +23,7 @@ const  Home = () => {
         <div class="head-overlay">
             <h1 class="head-title">Orion AI</h1>
             <p class="head-text">A Magical Window to the Future</p>
-            <a href="/wri" class="head-button">Join Us</a>
+            <a href="/writer" class="head-button">Join Us</a>
         </div>
        </div>
 
@@ -39,7 +39,7 @@ const  Home = () => {
             <h3>A kingdom of</h3>
             <h1><b><i>Writers</i></b></h1>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            <Link to='/wri'>
+            <Link to='/writer'>
             <Button variant="light">Play Now</Button>
             </Link>
           </div>
@@ -58,7 +58,9 @@ const  Home = () => {
             <h3>A kingdom of</h3>
             <h1><b><i>Artists</i></b></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <Link to='/artists'>
             <Button variant="light">Play Now</Button>
+            </Link>
           </div>
           <div className="carousel-image">
             <img
@@ -75,7 +77,9 @@ const  Home = () => {
             <h3>A kindom of</h3>
             <h1><b><i>Musicians</i></b></h1>
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <Link to='/musician'>
             <Button variant="light">Play Now</Button>
+            </Link>
           </div>
           <div className="carousel-image">
             <img
@@ -92,7 +96,9 @@ const  Home = () => {
             <h3>A Kingdom of</h3>
             <h1><b><i>Programmers</i></b></h1>
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <Link to='/coders'>
             <Button variant="light">Play Now</Button>
+            </Link>
           </div>
           <div className="carousel-image">
             <img
