@@ -1,5 +1,5 @@
 import React from 'react'
-import './codersHome.css';
+import './CodersHome.css';
 
 export default function Coders() {
   return (

@@ -1,6 +1,7 @@
 import React from 'react';
 import './WriterLvl1.css';
 
+
 const WriterLvl1 = () => {
     return (
         <div className="background-image1">
@@ -13,34 +14,20 @@ const WriterLvl1 = () => {
                 </p>
 
                 <div className="task-list">
-                    <Link to='/wriTask' className="task-btn">
-                    <button className="task-btn">Task 1<br /><span>Simple Email Writing and reply.</span></button>
-                    </Link>
-                    <Link to='/wriTask2' className="task-btn">
-                    <button className="task-btn">Task 2<br /><span>Speech Writing.</span></button>
-                    </Link>
-                    <Link to='/wriTask3' className="task-btn">
-                    <button className="task-btn">Task 3<br /><span>Social Media Post</span></button>
-                    </Link>
-                    <Link to='/wriTask4' className="task-btn">
-                    <button className="task-btn">Task 4<br /><span>Blog Post Summary</span></button>
-                    </Link>
-                    <Link to='/wriTask5' className="task-btn">
-                    <button className="task-btn">Task 5<br /><span>Text Summary</span></button>
-                    </Link>
-                    <button className="challenge-btn">Challenge 1</button>
+                    
 
                 <div className="task-list1">
-                    <button className="task-btn1"onClick={() => window.location.href='/Task'}>Task 1<br /><span>Simple Email Writing and reply.</span></button>
-                    <button className="task-btn1">Task 2<br /><span>Speech Writing.</span></button>
-                    <button className="task-btn1">Task 3<br /><span>Social Media Post</span></button>
-                    <button className="task-btn1">Task 4<br /><span>Blog Post Summary</span></button>
-                    <button className="task-btn1">Task 5<br /><span>Text Summary</span></button>
+                    <button className="task-btn1"onClick={() => window.location.href='/wriTask'}>Task 1<br /><span>Simple Email Writing and reply.</span></button>
+                    <button className="task-btn1" onClick={() => window.location.href='/wriTask2'}>Task 2<br /><span>Speech Writing.</span></button>
+                    <button className="task-btn1" onClick={() => window.location.href='/wriTask3'}>Task 3<br /><span>Social Media Post</span></button>
+                    <button className="task-btn1" onClick={() => window.location.href='/wriTask4'}>Task 4<br /><span>Blog Post Summary</span></button>
+                    <button className="task-btn1" onClick={() => window.location.href='/wriTask5'}>Task 5<br /><span>Text Summary</span></button>
                     <button className="challenge-btn1">Challenge 1</button>
 
                 </div>
             </div>
         </div>
+     </div>
     );
 }
 

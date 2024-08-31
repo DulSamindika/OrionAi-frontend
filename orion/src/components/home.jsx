@@ -39,7 +39,7 @@ const  Home = () => {
             <h3>A kingdom of</h3>
             <h1><b><i>Writers</i></b></h1>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            <Link to='/writer'>
+            <Link to='/wri'>
             <Button variant="light">Play Now</Button>
             </Link>
           </div>
@@ -114,88 +114,7 @@ const  Home = () => {
 
 
       
-{/*<div class="blog-slider">
-       <Swiper
-        modules={[Mousewheel, Pagination, EffectFade]}
-        spaceBetween={30}
-        effect="fade"
-        loop={true}
-        mousewheel={{ invert: false }}
-        pagination={{ clickable: true, el: '.blog-slider__pagination' }}
-      >
 
-
-  <div className="blog-slider__wrp swiper-wrapper">
-  <Container>
-  <SwiperSlide>
-  <Row>
-    <div className="blog-slider__item swiper-slide">
-    <Col>
-      <div className="blog-slider__img">
-        
-        <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp" alt="home" />
-      </div>
-    </Col>
-    <Col>
-      <div className="blog-slider__content">
-        <span className="blog-slider__code">26 December 2019</span>
-        <div className="blog-slider__title">Lorem Ipsum Dolor</div>
-        <div className="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
-        <a href="yhbb" className="blog-slider__button">READ MORE</a>
-      </div>
-      </Col>
-    </div>
-    </Row>
-    </SwiperSlide>
-    </Container>
-
-    <SwiperSlide>
-        <div className="blog-slider__item swiper-slide">
-          <div className="blog-slider__img">
-            <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp" alt="home" />
-          </div>
-          <div className="blog-slider__content">
-            <span className="blog-slider__code">26 December 2019</span>
-            <div className="blog-slider__title">Lorem Ipsum Dolor</div>
-            <div className="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-            <a href="yhbb" className="blog-slider__button">READ MORE</a>
-          </div>
-        </div>
-      </SwiperSlide>
-
-    <SwiperSlide>
-    <div className="blog-slider__item swiper-slide">
-      <div className="blog-slider__img">
-        <img src="hero.png" alt=""/>
-      </div>
-      <div className="blog-slider__content">
-        <span className="blog-slider__code">26 December 2019</span>
-        <div className="blog-slider__title">Lorem Ipsum Dolor2</div>
-        <div className="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-        <a href="ghhv" className="blog-slider__button">READ MORE</a>
-      </div>
-    </div>
-    </SwiperSlide>
-
-    <SwiperSlide>
-    <div className="blog-slider__item swiper-slide">
-      <div className="blog-slider__img">
-        <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp" alt="" />
-      </div>
-      <div className="blog-slider__content">
-        <span className="blog-slider__code">26 December 2019</span>
-        <div className="blog-slider__title">Lorem Ipsum Dolor</div>
-        <div className="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-        <a href="hgf" className="blog-slider__button">READ MORE</a>
-      </div>
-    </div>
-    </SwiperSlide>
-  </div>
-  <div class="blog-slider__pagination"></div>
-
-
-  </Swiper>
-</div>*/}
     </div>
   )
 }
