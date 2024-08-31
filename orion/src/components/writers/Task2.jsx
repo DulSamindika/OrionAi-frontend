@@ -3,7 +3,7 @@ import { Container, Row, Col, Button, Card, Form } from 'react-bootstrap';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import './Task.css';
 
-const TaskTwo = () => {
+const Task2 = () => {
   const [prompt, setPrompt] = useState('');
   const [output, setOutput] = useState('');
   const [improvedPrompt, setImprovedPrompt] = useState('');
@@ -132,4 +132,4 @@ const TaskTwo = () => {
   );
 };
 
-export default TaskTwo;
+export default Task2;
