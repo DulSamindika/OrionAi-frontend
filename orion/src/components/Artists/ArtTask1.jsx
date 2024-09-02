@@ -2,6 +2,7 @@ import React from 'react';
 import './ArtTask.css';
 import { Container, Row, Col, Button, Card, Form } from 'react-bootstrap';
 import { useState } from 'react';
+import Image from 'react-bootstrap/Image';
 
 
 const ArtTask1 = () => {
@@ -9,6 +10,7 @@ const ArtTask1 = () => {
   const [prompt, setPrompt] = useState('');
   const [output, setOutput] = useState('');
   const [improvedPrompt, setImprovedPrompt] = useState('');
+  const [selectedModel, setSelectedModel] = useState(null);
 
   const handleGenerate = () => {
     // Simulating the Oracle's response
@@ -20,12 +22,16 @@ const ArtTask1 = () => {
     setImprovedPrompt(improved);
   };
 
+  const handleSelect = (model) => {
+    setSelectedModel(model);
+  };
+
     return (
         <div style={{backgroundColor:"#121212"}}>
     <Container className="mt-5">
       <Row>
         <Col>
-          <h2 className="text-primary">Task 1</h2>
+          <h2 className="text-primary" style={{color:"#c4b211"}}>Task 1</h2>
           <h4 className="text-secondary">Simple Email Writing and reply.</h4>
         </Col>
       </Row>
@@ -47,7 +53,21 @@ const ArtTask1 = () => {
         </Col>
         <Col md={4}>
           <h5>Model</h5>
-          <Button variant="dark" className="mb-3">GPT-4</Button>
+          <Button 
+          variant="dark"
+          className={`mb-3 ${selectedModel === 'Dall-E' ? 'btn-selected' : ''}`}
+          onClick={() => handleSelect('Dall-E')}>Dall-E</Button>
+          
+          <Button 
+          variant="dark"
+          className={`mb-3 ${selectedModel === 'Leanardo AI' ? 'btn-selected' : ''}`}
+          onClick={() => handleSelect('Leanardo AI')}>Leanardo AI</Button>
+
+          <Button 
+          variant="dark"
+          className={`mb-3 ${selectedModel === 'Midjourney' ? 'btn-selected' : ''}`}
+          onClick={() => handleSelect('Midjourney')}>Midjourney</Button>
+
           <h5>Tutorials</h5>
           <Button variant="secondary" className="mb-2">Tutorial 1</Button>
           <Button variant="secondary" className="mb-2">Tutorial 2</Button>
@@ -64,13 +84,27 @@ const ArtTask1 = () => {
             onChange={(e) => setPrompt(e.target.value)} 
             className="Formarea"
           />
-          <Button variant="primary" className="mt-3" onClick={handleGenerate}>Generate</Button>
+          <Button variant="warning" className="mt-3 btn-primary" onClick={handleGenerate}>Generate</Button>
         </Col>
         <Col md={6}>
           <h5>Output</h5>
           <Card>
-            <Card.Img src="holder.js/100px180"  >{output}</Card.Img>
+            <Card.Body>{output}</Card.Body>
           </Card>
+        </Col>
+      </Row>
+      <Row>
+      <Col xs={6} md={3}>
+          <Image src="./Images/artOutput1.jpg" style={{maxHeight:"900px" , maxWidth: "300px", marginTop: "30px"}} rounded />
+      </Col>
+        <Col xs={6} md={3}>
+          <Image src="./Images/artOutput2.jpg" style={{maxHeight:"900px" , maxWidth: "300px", marginTop: "30px"}} rounded />
+        </Col>
+        <Col xs={6} md={3}>
+          <Image src="./Images/artOutput3.jpg" style={{maxHeight:"900px" , maxWidth: "300px", marginTop: "30px"}} rounded />
+        </Col>
+        <Col xs={6} md={3}>
+          <Image src="./Images/artOutput4.jpg"style={{maxHeight:"900px" , maxWidth: "300px", marginTop: "30px"}} rounded />
         </Col>
       </Row>
       <Row className="mt-4">
