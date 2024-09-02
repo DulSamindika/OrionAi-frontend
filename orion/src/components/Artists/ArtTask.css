@@ -1,5 +1,124 @@
 
 
+/*html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+     background-color: #121212;
+  }
+  
+.container {
+    background-color: #121212;
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 20px;
+    padding-top: 100px;
+}
+
+
+.card {
+    background-color: #1e1e1e;
+    border: none;
+    color: #ffffff;
+}
+
+
+.card-title {
+    color: #ffffff;
+}
+
+
+.btn-primary {
+    background-color: #7a5a03;
+    border-color: #f7b500;
+}
+
+.btn-primary:hover {
+    background-color: #f7b500;
+    border-color: #f7b500;
+}
+
+.btn-secondary {
+    background-color: #424242;
+    border-color: #424242;
+    color: #e0e0e0;
+}
+
+.btn-secondary:hover {
+    background-color: #616161;
+    border-color: #616161;
+}
+
+
+
+
+form textarea {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #424242;
+}
+
+form textarea:focus {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    border: 1px solid #f7b500;
+    box-shadow: none;
+}
+
+
+.card-body {
+    background-color: #1e1e1e;
+    color: #fcfcfc;
+}
+
+/
+h2, h4, h5 {
+    color: #b8b6bb;
+
+}
+
+
+.card {
+    border: 1px solid #424242;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.mb-2{
+    margin: 5px;
+}
+
+.mb-3{
+    margin: 5px;
+}
+
+.Formarea{
+    background-color: #121212;
+}
+
+.btn-dark {
+    background-color: #212121;
+    border: 2px solid #212121;
+    color: #ffffff;
+}
+
+.btn-dark:hover {
+    background-color: #424242;
+    border-color: #f7b500;
+}
+
+
+.btn-selected {
+    border: 2px solid #f7b500 !important; 
+    background-color: #424242; /
+}
+
+
+.btn-dark:focus {
+    outline: none;
+    box-shadow: none;
+}*/
+
 html,body {
     margin: 0;
     padding: 0;
@@ -31,13 +150,13 @@ html,body {
 
 /* Button styles for dark mode */
 .btn-primary {
-    background-color: #7a5a03;
-    border-color: #f7b500;
+    background-color: #c4b211;
+    border-color: #c4b211;
 }
 
 .btn-primary:hover {
-    background-color: #f7b500;
-    border-color: #f7b500;
+    background-color: #e7d323;
+    border-color: #e7d323;
 }
 
 .btn-secondary {
@@ -63,7 +182,7 @@ form textarea {
 form textarea:focus {
     background-color: #2c2c2c;
     color: #ffffff;
-    border: 1px solid #f7b500;
+    border: 1px solid #c4b211;
     box-shadow: none;
 }
 
@@ -119,12 +238,12 @@ h2, h4, h5 {
 
 .btn-dark:hover {
     background-color: #424242;
-    border-color: #f7b500;
+    border-color: #c4b211;
 }
 
 /* Selected button border */
 .btn-selected {
-    border: 2px solid #f7b500 !important; /* Ensure the selected border stays blue */
+    border: 2px solid #c4b211 !important; /* Ensure the selected border stays blue */
     background-color: #424242; /* Optional: change background when selected */
 }
 
@@ -132,5 +251,9 @@ h2, h4, h5 {
 .btn-dark:focus {
     outline: none;
     box-shadow: none;
+}
+
+.text-primary{
+    color: #c4b211;
 }
 
