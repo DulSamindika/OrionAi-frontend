@@ -13,6 +13,7 @@ const WriterLvl1 = () => {
                     Argoals of Gozo, mastering the fine art of commanding words.
                 </p>
 
+
                 <div className="task-list">
                     
 
@@ -22,6 +23,16 @@ const WriterLvl1 = () => {
                     <button className="task-btn1" onClick={() => window.location.href='/wriTask3'}>Task 3<br /><span>Social Media Post</span></button>
                     <button className="task-btn1" onClick={() => window.location.href='/wriTask4'}>Task 4<br /><span>Blog Post Summary</span></button>
                     <button className="task-btn1" onClick={() => window.location.href='/wriTask5'}>Task 5<br /><span>Text Summary</span></button>
+
+        
+
+                <div className="task-list1">
+                    <button className="task-btn1"onClick={() => window.location.href='/Task1'}>Task 1<br /><span>Simple Email Writing and reply.</span></button>
+                    <button className="task-btn1"onClick={() => window.location.href='/Task2'}>Task 2<br /><span>Speech Writing.</span></button>
+                    <button className="task-btn1"onClick={() => window.location.href='/Task3'}>Task 3<br /><span>Social Media Post</span></button>
+                    <button className="task-btn1"onClick={() => window.location.href='/Task4'}>Task 4<br /><span>Blog Post Summary</span></button>
+                    <button className="task-btn1"onClick={() => window.location.href='/Task5'}>Task 5<br /><span>Text Summary</span></button>
+
                     <button className="challenge-btn1">Challenge 1</button>
 
                 </div>
