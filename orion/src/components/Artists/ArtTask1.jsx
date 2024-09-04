@@ -115,6 +115,18 @@ const ArtTask1 = () => {
           </Card>
         </Col>
       </Row>
+      <Row style={{margin:"50px"}}>
+        <Col md={2}>
+        <Button variant="outline-light" style={{margin:"20px", justifyContent:"flex-start"}}>Back</Button>
+        </Col>
+        <Col md={8}>
+        <h5>Level 1</h5>
+        <ProgressBar animated now={40} />
+        </Col>
+        <Col md={2}>
+        <Button variant="light" style={{margin:"20px", alignContent:"flex-end", justifyContent:"left"}}>Next Task</Button>
+        </Col>
+      </Row>
     </Container>
     </div>
     );
