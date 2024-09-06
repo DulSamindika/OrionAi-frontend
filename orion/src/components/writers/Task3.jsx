@@ -10,11 +10,11 @@ const Task3 = () => {
   const [selectedModel, setSelectedModel] = useState(null);
 
   const handleGenerate = () => {
-    // Simulating the Oracle's response
+    
     const oracleResponse = `Oracle Response to: "${prompt}"`;
     setOutput(oracleResponse);
 
-    // Improve the prompt logic here if needed
+    
     const improved = `Improved prompt based on: "${prompt}"`;
     setImprovedPrompt(improved);
   };
