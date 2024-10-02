@@ -1,11 +1,12 @@
 import React from 'react';
-import './ArtTask.css';
-import { Container, Row, Col, Button, Card, Form } from 'react-bootstrap';
+import './TaskA.css';
+import { Container, Row, Col, Button, Card, Form, ProgressBar } from 'react-bootstrap'; // Added ProgressBar
 import { useState } from 'react';
 import Image from 'react-bootstrap/Image';
 
 
-const ArtTask1 = () => {
+
+const TaskA1 = () => {
 
   const [prompt, setPrompt] = useState('');
   const [output, setOutput] = useState('');
@@ -31,8 +32,8 @@ const ArtTask1 = () => {
     <Container className="mt-5">
       <Row>
         <Col>
-          <h2 className="text-primary" style={{color:"#c4b211"}}>Task 1</h2>
-          <h4 className="text-secondary">Simple Email Writing and reply.</h4>
+        <h2 className="task-title">Task 1</h2>
+        <h4 className="text-secondary">Create a Simple Landscape.</h4>
         </Col>
       </Row>
       <Row className="mt-4">
@@ -86,12 +87,7 @@ const ArtTask1 = () => {
           />
           <Button variant="warning" className="mt-3 btn-primary" onClick={handleGenerate}>Generate</Button>
         </Col>
-        <Col md={6}>
-          <h5>Output</h5>
-          <Card>
-            <Card.Body>{output}</Card.Body>
-          </Card>
-        </Col>
+
       </Row>
       <Row>
       <Col xs={6} md={3}>
@@ -116,15 +112,12 @@ const ArtTask1 = () => {
         </Col>
       </Row>
       <Row style={{margin:"50px"}}>
-        <Col md={2}>
-        <Button variant="outline-light" style={{margin:"20px", justifyContent:"flex-start"}}>Back</Button>
-        </Col>
         <Col md={8}>
         <h5>Level 1</h5>
-        <ProgressBar animated now={40} />
+        <ProgressBar animated now={20} className="custom-progress-bar" />
         </Col>
         <Col md={2}>
-        <Button variant="light" style={{margin:"20px", alignContent:"flex-end", justifyContent:"left"}}>Next Task</Button>
+        <Button variant="light" style={{margin:"20px"}} onClick={() => window.location.href='/TaskA2'}>Next Task</Button>
         </Col>
       </Row>
     </Container>
@@ -132,4 +125,4 @@ const ArtTask1 = () => {
     );
 }
 
-export default ArtTask1;
+export default TaskA1;
