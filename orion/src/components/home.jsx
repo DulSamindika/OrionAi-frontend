@@ -23,7 +23,7 @@ const  Home = () => {
         <div class="head-overlay">
             <h1 class="head-title">Orion AI</h1>
             <p class="head-text">A Magical Window to the Future</p>
-            <a href="/writer" class="head-button">Join Us</a>
+            <a href="/Login" class="head-button">Join Us</a>
         </div>
        </div>
 
@@ -38,7 +38,7 @@ const  Home = () => {
           <div className="carousel-text" style={{"color":"white"}}>
             <h3>A kingdom of</h3>
             <h1><b><i>Writers</i></b></h1>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <p>Where you can master the art of text prompting. </p>
             <Link to='/writer'>
             <Button variant="light">Play Now</Button>
             </Link>
@@ -57,7 +57,7 @@ const  Home = () => {
           <div className="carousel-text" style={{"color":"white"}}>
             <h3>A kingdom of</h3>
             <h1><b><i>Artists</i></b></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Learn to Generate eye catching images like pro.</p>
             <Link to='/artists'>
             <Button variant="light">Play Now</Button>
             </Link>
@@ -76,7 +76,7 @@ const  Home = () => {
           <div className="carousel-text" style={{"color":"white"}}>
             <h3>A kindom of</h3>
             <h1><b><i>Musicians</i></b></h1>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <p>Learn to Generate incredible catching audio like pro.</p>
             <Link to='/musician'>
             <Button variant="light">Play Now</Button>
             </Link>
@@ -95,7 +95,7 @@ const  Home = () => {
           <div className="carousel-text" style={{"color":"white"}}>
             <h3>A Kingdom of</h3>
             <h1><b><i>Programmers</i></b></h1>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <p>Learn to Generate code like pro.</p>
             <Link to='/coders'>
             <Button variant="light">Play Now</Button>
             </Link>

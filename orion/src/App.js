@@ -11,13 +11,18 @@ import Task4 from './components/writers/Task4';
 import Task5 from './components/writers/Task5';
 import Artist from './components/Artists/Artist';  
 import ArtistLvl1 from './components/Artists/ArtistLvl1';
+import TaskA1 from './components/Artists/TaskA1';
+import TaskA2 from './components/Artists/TaskA2';
+import TaskA3 from './components/Artists/TaskA3'
+import TaskA4 from './components/Artists/TaskA4';
+import TaskA5 from './components/Artists/TaskA5';
 import Musician from './components/Musicians/Musician';
 import MusicianLvl1 from './components/Musicians/MusicianLvl1';
 import CodersHome from './components/coders/CodersHome';
 import CodersLvl1 from './components/coders/CodersLvl1';
 import Login from './components/Login';
 import Register from './components/Register';
-
+import Hello from './components/Hello';
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -40,6 +45,7 @@ function App() {
           />
           <Route path="/login" element={<Login />} />
           <Route path="/Register" element={<Register />} />
+          <Route path="/Hello" element={<Hello />} />
         </Routes>
       </Router>
     </>
@@ -49,7 +55,7 @@ function App() {
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/home" element={<Home />} />
       <Route path="/writer" element={<WritersHome />} />
       <Route path="/WriterLvl1" element={<WriterLvl1 />} />
       <Route path="/artists" element={<Artist />} />
@@ -63,6 +69,14 @@ const AppRoutes = () => {
       <Route path="/Task3" element={<Task3 />} />
       <Route path="/Task4" element={<Task4 />} />
       <Route path="/Task5" element={<Task5 />} />
+
+      <Route path="/TaskA1" element={<TaskA1 />} />
+      <Route path="/TaskA2" element={<TaskA2 />} />
+      <Route path="/TaskA3" element={<TaskA3 />} />
+      <Route path="/TaskA4" element={<TaskA4 />} />
+      <Route path="/TaskA5" element={<TaskA5 />} />
+      
+      
     </Routes>
   );
 };

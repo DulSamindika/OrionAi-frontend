@@ -56,20 +56,43 @@ p {
 
 form label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 2px; /* Reduce margin between label and input */
   font-size: 0.8rem;
   color: rgba(67, 67, 67, 1);
 }
 
-form input[type="email"],
-form input[type="password"] {
+.input-with-icon {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.input-with-icon input[type="email"],
+.input-with-icon input[type="password"] {
   width: 100%;
   padding: 8px;
-  margin-bottom: 10px;
+  padding-right: 30px; /* Space for the icon */
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 0.9rem;
   background-color: rgba(67, 67, 67, 1);
+}
+
+.input-error {
+  border: 2px solid red; /* Red border for input error */
+}
+
+.error-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 5px;
 }
 
 form input[type="email"]:focus,
@@ -80,7 +103,7 @@ form input[type="password"]:focus {
 .login-options {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Ensure alignment */
+  justify-content: space-between;
   margin-bottom: 20px;
   font-size: 0.9rem;
 }
@@ -94,7 +117,7 @@ form button[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
   font-size: 1rem;
-  margin-bottom: 15px; /* Move the button slightly up */
+  margin-bottom: 15px;
 }
 
 form button[type="submit"]:hover {
@@ -108,25 +131,24 @@ a {
 }
 
 a:hover {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 /* Custom styles for "Forgot your password?" and "Register" links */
 .forgot-password,
 .register-link1 a {
-  color: rgba(67, 67, 67, 1); /* Change color */
-  text-decoration: none; /* Remove underline */
+  color: rgba(67, 67, 67, 1);
+  text-decoration: none;
 }
 
 .forgot-password:hover,
 .register-link1 a:hover {
-  text-decoration:none; /* Add underline on hover */
   cursor: pointer;
 }
 
 .register-link1 {
-  text-align: left; /* Align "Register" link to the right */
-  margin-top: 10px; /* Move the "Register" text slightly up */
+  text-align: left;
+  margin-top: 10px;
   font-size: 0.8rem;
 }
 

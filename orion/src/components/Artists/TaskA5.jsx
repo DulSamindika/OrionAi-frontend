@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Button, Card, Form } from 'react-bootstrap';
 import ProgressBar from 'react-bootstrap/ProgressBar';
-import './Task.css';
+import './TaskA.css';
 
-const Task1 = () => {
+const TaskA5 = () => {
   const [prompt, setPrompt] = useState('');
   const [output, setOutput] = useState('');
   const [improvedPrompt, setImprovedPrompt] = useState('');
 
   const handleGenerate = () => {
-    // Simulating the Oracle's response
-    const oracleResponse = `Oracle Response to: "${prompt}"`;
-    setOutput(oracleResponse);
+    // Simulating the AI response
+    const aiResponse = `AI Response to: "${prompt}"`;
+    setOutput(aiResponse);
 
     // Improve the prompt logic here if needed
     const improved = `Improved prompt based on: "${prompt}"`;
@@ -23,8 +23,8 @@ const Task1 = () => {
     <Container className="mt-5">
       <Row>
         <Col>
-          <h2 className="text-primary">Task 1</h2>
-          <h4 className="text-secondary">Simple Email Writing and reply.</h4>
+          <h2 className="task-title">Task 5</h2> {/* Updated styling class */}
+          <h4 className="text-secondary">Design a Basic Character.</h4>
         </Col>
       </Row>
       <Row className="mt-4">
@@ -33,19 +33,18 @@ const Task1 = () => {
             <Card.Body className='card-body'>
               <Card.Title style={{color:"white"}}>Task Description</Card.Title>
               <Card.Text style={{color:"white"}}>
-                In the heart of the Acropolis of Code, an ancient Oracle has awakened, foretelling a coming storm that threatens the harmony between man and machine. Queen Sophia, wise and just, has summoned the most skilled promptsmiths to her court.
-                As a Promptian, your first task is to craft a simple yet powerful prompt that can guide the Oracle to reveal more about this impending danger. The prompt must be clear and precise, as the Oracle's response will shape the kingdom's next steps.
-              </Card.Text>
+              In the Prism Chamber of the Kingdom of Artists, the art of transformation through filters is held in high regard. Your task is to apply basic filters to an image, altering its appearance while maintaining its original essence. The Queen believes that even the simplest changes can bring forth new perspectives, enhancing the artwork's emotional and visual impact.
+                 </Card.Text>
               <Card.Title style={{color:"white"}}>Objective</Card.Title>
               <Card.Text style={{color:"white"}}>
-                Create a prompt that will ask the Oracle to describe the nature of the threat posed by the Silencers and suggest ways to safeguard the kingdom. Keep it concise, ensuring the Oracle understands and responds with valuable insights.
-              </Card.Text>
+              Apply basic filters such as grayscale, sepia, or blur to enhance or change the mood of an image. The goal is to manipulate the image while ensuring that the underlying artistic elements remain clear, symbolizing the transformative power of filters within the Kingdom of Artists.
+            </Card.Text>
             </Card.Body>
           </Card>
         </Col>
         <Col md={4}>
           <h5>Model</h5>
-          <Button variant="dark" className="mb-3">GPT-4</Button>
+          <Button variant="dark" className="mb-3">Leonardo AI</Button>
           <h5>Tutorials</h5>
           <Button variant="secondary" className="mb-2">Tutorial 1</Button>
           <Button variant="secondary" className="mb-2">Tutorial 2</Button>
@@ -62,13 +61,17 @@ const Task1 = () => {
             onChange={(e) => setPrompt(e.target.value)} 
             className="Formarea"
           />
-          <Button variant="primary" className="mt-3" onClick={handleGenerate}>Generate</Button>
+          <Button variant="warning" className="mt-3" onClick={handleGenerate}>Generate</Button>
         </Col>
         <Col md={6}>
           <h5>Output</h5>
-          <Card>
-            <Card.Body>{output}</Card.Body>
-          </Card>
+    
+          <div className="image-row">
+            <img src="/path_to_image1" alt="a" />
+            <img src="/path_to_image2" alt="b" />
+            <img src="/path_to_image3" alt="c" />
+          </div>
+          
         </Col>
       </Row>
       <Row className="mt-4">
@@ -80,12 +83,15 @@ const Task1 = () => {
         </Col>
       </Row>
       <Row style={{margin:"50px"}}>
+      <Col md={2}>
+        <Button variant="outline-light" style={{margin:"20px", justifyContent:"flex-start"}}onClick={() => window.location.href='/TaskA4'}>Back</Button>
+        </Col>
         <Col md={8}>
         <h5>Level 1</h5>
-        <ProgressBar animated now={20} />
+        <ProgressBar animated now={100} />
         </Col>
         <Col md={2}>
-        <Button variant="light" style={{margin:"20px", alignContent:"flex-end", justifyContent:"left"}}onClick={() => window.location.href='/Task2'}>Next Task</Button>
+        <Button variant="light" style={{margin:"20px"}} onClick={() => window.location.href=''}>Next Challenge</Button>
         </Col>
       </Row>
     </Container>
@@ -93,4 +99,4 @@ const Task1 = () => {
   );
 };
 
-export default Task1;
+export default TaskA5;
