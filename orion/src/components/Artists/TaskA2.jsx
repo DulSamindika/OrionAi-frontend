@@ -115,7 +115,7 @@ const TaskA2 = () => {
         <Button variant="outline-light" style={{margin:"20px", justifyContent:"flex-start"}}onClick={() => window.location.href='/TaskA1'}>Back</Button>
         </Col>
         <Col md={8}>
-        <h5>Level 1</h5>
+        <h5>Level 2</h5>
         <ProgressBar animated now={40} className="custom-progress-bar" />
 
         </Col>

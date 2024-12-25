@@ -6,7 +6,7 @@ import Image from 'react-bootstrap/Image';
 
 
 
-const TaskA3 = () => {
+const TaskA24 = () => {
 
   const [prompt, setPrompt] = useState('');
   const [output, setOutput] = useState('');
@@ -32,8 +32,8 @@ const TaskA3 = () => {
     <Container className="mt-5">
       <Row>
         <Col>
-        <h2 className="task-title">Task 3</h2>
-          <h4 className="text-secondary">Generate a Basic Abstract Image</h4>
+        <h2 className="task-title">Task 4</h2>
+          <h4 className="text-secondary">Illustrate a Set of Everyday Objects</h4>
         </Col>
       </Row>
       <Row className="mt-4">
@@ -42,12 +42,10 @@ const TaskA3 = () => {
             <Card.Body className='card-body'>
               <Card.Title style={{color:"white"}}>Task Description</Card.Title>
               <Card.Text style={{color:"white"}}>
-              Deep within the Gallery of Abstracts, the essence of imagination is captured through vibrant swirls and forms. For the upcoming Abstract Showcase, your task is to create a simple abstract image that conveys emotion and movement. This image must push the boundaries of conventional form, as the Oracle of Art challenges all promptsmiths to think beyond the ordinary.
-                 </Card.Text>
+              In the Artisan’s Workshop, everyday tools and objects come to life through intricate designs that celebrate their utility and beauty. The Artisan Council challenges you to illustrate a set of such objects, transforming the ordinary into the extraordinary.</Card.Text>
               <Card.Title style={{color:"white"}}>Objective</Card.Title>
               <Card.Text style={{color:"white"}}>
-              Generate an abstract image that evokes a strong emotional response. Focus on simple geometric shapes, colors, and patterns to create a visual experience that resonates with the viewer and embodies the abstract art style of the Kingdom of Artists.
-                   </Card.Text>
+              Craft a prompt to create a set of three everyday objects (e.g., a lantern, a basket, and a quill) with elegant and detailed designs that highlight their craftsmanship and artistic flair.  </Card.Text>
             </Card.Body>
           </Card>
         </Col>
@@ -111,21 +109,21 @@ const TaskA3 = () => {
         </Col>
       </Row>
       <Row style={{margin:"50px"}}>
-        <Col md={2}>
-        <Button variant="outline-light" style={{margin:"20px", justifyContent:"flex-start"}}onClick={() => window.location.href='/TaskA2'}>Back</Button>
+      <Col md={2}>
+        <Button variant="outline-light" style={{margin:"20px", justifyContent:"flex-start"}}onClick={() => window.location.href='/TaskA23'}>Back</Button>
         </Col>
         <Col md={8}>
-        <h5>Level 3</h5>
-        <ProgressBar animated now={60} className="custom-progress-bar" />
+        <h5>Level 4</h5>
+        <ProgressBar animated now={80} className="custom-progress-bar" />
 
         </Col>
         <Col md={2}>
-        <Button variant="light" style={{margin:"20px"}} onClick={() => window.location.href='/TaskA4'}>Next Task</Button>
+        <Button variant="light" style={{margin:"20px"}} onClick={() => window.location.href='/TaskA25'}>Next Task</Button>
         </Col>
       </Row>
     </Container>
     </div>
-    );
-}
+  );
+};
 
-export default TaskA3;
+export default TaskA24;

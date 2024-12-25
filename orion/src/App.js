@@ -13,9 +13,18 @@ import Artist from './components/Artists/Artist';
 import ArtistLvl1 from './components/Artists/ArtistLvl1';
 import TaskA1 from './components/Artists/TaskA1';
 import TaskA2 from './components/Artists/TaskA2';
-import TaskA3 from './components/Artists/TaskA3'
+import TaskA3 from './components/Artists/TaskA3';
 import TaskA4 from './components/Artists/TaskA4';
 import TaskA5 from './components/Artists/TaskA5';
+import ArtistLvl2 from './components/Artists/ArtistLvl2';
+import TaskA21 from './components/Artists/TaskA21';
+import TaskA22 from './components/Artists/TaskA22';
+import TaskA23 from './components/Artists/TaskA23';
+import TaskA24 from './components/Artists/TaskA24';
+import TaskA25 from './components/Artists/TaskA25';
+
+
+
 import Musician from './components/Musicians/Musician';
 import MusicianLvl1 from './components/Musicians/MusicianLvl1';
 import CodersHome from './components/coders/CodersHome';
@@ -64,11 +73,21 @@ const AppRoutes = () => {
       <Route path="/WriterLvl1" element={<WriterLvl1 />} />
       <Route path="/artists" element={<Artist />} />
       <Route path="/ArtistLvl1" element={<ArtistLvl1 />} />
+      <Route path="/ArtistLvl2" element={<ArtistLvl2 />} />
+      
       <Route path="/TaskA1" element={<TaskA1 />} />
       <Route path="/TaskA2" element={<TaskA2 />} /> 
       <Route path="/TaskA3" element={<TaskA3 />} />
       <Route path="/TaskA4" element={<TaskA4 />} />
       <Route path="/TaskA5" element={<TaskA5 />} />
+
+      <Route path="/TaskA21" element={<TaskA21 />} />
+      <Route path="/TaskA22" element={<TaskA22 />} />
+      <Route path="/TaskA23" element={<TaskA23 />} />
+      <Route path="/TaskA24" element={<TaskA24 />} />
+      <Route path="/TaskA25" element={<TaskA25 />} />
+
+
       <Route path="/musician" element={<Musician />} />
       <Route path="/MusicianLvl1" element={<MusicianLvl1 />} />
       <Route path="/coders" element={<CodersHome />} />
@@ -78,7 +97,7 @@ const AppRoutes = () => {
       <Route path="/Task3" element={<Task3 />} />
       <Route path="/Task4" element={<Task4 />} />
       <Route path="/Task5" element={<Task5 />} />
-
+ 
       <Route path="/TaskA1" element={<TaskA1 />} />
       <Route path="/TaskA2" element={<TaskA2 />} />
       <Route path="/TaskA3" element={<TaskA3 />} />

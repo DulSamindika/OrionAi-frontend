@@ -6,7 +6,7 @@ import Image from 'react-bootstrap/Image';
 
 
 
-const TaskA3 = () => {
+const TaskA21 = () => {
 
   const [prompt, setPrompt] = useState('');
   const [output, setOutput] = useState('');
@@ -32,8 +32,8 @@ const TaskA3 = () => {
     <Container className="mt-5">
       <Row>
         <Col>
-        <h2 className="task-title">Task 3</h2>
-          <h4 className="text-secondary">Generate a Basic Abstract Image</h4>
+        <h2 className="task-title">Task 1</h2>
+        <h4 className="text-secondary">Create a dynamic background scene.</h4>
         </Col>
       </Row>
       <Row className="mt-4">
@@ -42,12 +42,10 @@ const TaskA3 = () => {
             <Card.Body className='card-body'>
               <Card.Title style={{color:"white"}}>Task Description</Card.Title>
               <Card.Text style={{color:"white"}}>
-              Deep within the Gallery of Abstracts, the essence of imagination is captured through vibrant swirls and forms. For the upcoming Abstract Showcase, your task is to create a simple abstract image that conveys emotion and movement. This image must push the boundaries of conventional form, as the Oracle of Art challenges all promptsmiths to think beyond the ordinary.
-                 </Card.Text>
+              In the Studio of Discovery, the vibrant Festival of Colors is in full swing, a celebration of creativity and harmony. However, whispers of an approaching disruption loom in the air. The Artisan Council seeks your help to craft a dynamic background scene that reflects the festival’s joy while hinting at the shadow of uncertainty. Your scene must balance vibrancy and subtle tension, capturing the duality of the kingdom’s current state. </Card.Text>
               <Card.Title style={{color:"white"}}>Objective</Card.Title>
               <Card.Text style={{color:"white"}}>
-              Generate an abstract image that evokes a strong emotional response. Focus on simple geometric shapes, colors, and patterns to create a visual experience that resonates with the viewer and embodies the abstract art style of the Kingdom of Artists.
-                   </Card.Text>
+              Design a prompt to generate a colorful festival scene with lively details like banners and lights, incorporating a subtle element (e.g., dark clouds or distant figures) to foreshadow the disruption.</Card.Text>
             </Card.Body>
           </Card>
         </Col>
@@ -86,7 +84,7 @@ const TaskA3 = () => {
           />
           <Button variant="warning" className="mt-3 btn-primary" onClick={handleGenerate}>Generate</Button>
         </Col>
-        
+
       </Row>
       <Row>
       <Col xs={6} md={3}>
@@ -111,16 +109,12 @@ const TaskA3 = () => {
         </Col>
       </Row>
       <Row style={{margin:"50px"}}>
-        <Col md={2}>
-        <Button variant="outline-light" style={{margin:"20px", justifyContent:"flex-start"}}onClick={() => window.location.href='/TaskA2'}>Back</Button>
-        </Col>
         <Col md={8}>
-        <h5>Level 3</h5>
-        <ProgressBar animated now={60} className="custom-progress-bar" />
-
+        <h5>Level 1</h5>
+        <ProgressBar animated now={20} className="custom-progress-bar" />
         </Col>
         <Col md={2}>
-        <Button variant="light" style={{margin:"20px"}} onClick={() => window.location.href='/TaskA4'}>Next Task</Button>
+        <Button variant="light" style={{margin:"20px"}} onClick={() => window.location.href='/TaskA22'}>Next Task</Button>
         </Col>
       </Row>
     </Container>
@@ -128,4 +122,4 @@ const TaskA3 = () => {
     );
 }
 
-export default TaskA3;
+export default TaskA21;

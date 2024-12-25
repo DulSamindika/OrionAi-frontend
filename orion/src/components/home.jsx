@@ -31,7 +31,6 @@ const  Home = () => {
 
 
 
-
        <Carousel className="custom-carousel" >
       <Carousel.Item>
         <div className="carousel-content" style={{"background-color":"#0C0B45"}}>

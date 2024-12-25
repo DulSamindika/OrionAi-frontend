@@ -99,4 +99,4 @@ const TaskA3 = () => {
   );
 };
 
-export default ArtTaskA3;
+export default ArtTask3;
